@@ -1,0 +1,23 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students/6ac86a1b6937b547602b78d4
+  method: DELETE
+  body:
+    type: json
+    content: |
+      {
+        "email": "student1@example.com",
+        "password": "password123"
+      }
+response:
+  statusCode: 204
+  statusText: No Content
+  headers:
+    x-powered-by: Express
+    date: Fri, 09 Oct 2026 04:27:20 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: text
+    content: ""
+order: 4437668252022862

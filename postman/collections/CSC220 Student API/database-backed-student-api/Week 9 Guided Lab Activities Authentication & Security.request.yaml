@@ -1,0 +1,5 @@
+$kind: http-request
+url: ""
+method: GET
+examples: .resources/Week 9 Guided Lab Activities Authentication & Security.resources/examples
+order: 4115667984517841

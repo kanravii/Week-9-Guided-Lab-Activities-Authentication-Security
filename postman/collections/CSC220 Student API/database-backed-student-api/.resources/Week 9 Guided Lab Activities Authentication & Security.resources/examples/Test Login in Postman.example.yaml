@@ -1,0 +1,29 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/auth/login
+  method: POST
+  body:
+    type: json
+    content: |
+      {
+        "email": "student1@example.com",
+        "password": "password123"
+      }
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "201"
+    etag: W/"c9-XhFSXHZWuAJb42PUhfdODcwC06o"
+    date: Mon, 28 Sep 2026 02:36:35 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhYjlkMWYwNDIyMzNiOGU3MTBmYzMyZCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzkwNTYyOTk1LCJleHAiOjE3OTA1NjY1OTV9.BVKXps_eY1Uz5axZjzvc5Nkvlb5PvBTIIADDRoBuEDQ"
+      }
+order: 4342611165978

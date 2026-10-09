@@ -1,0 +1,31 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/auth/register
+  method: POST
+  body:
+    type: json
+    content: |
+      {
+        "email": "student1@example.com",
+        "password": "password123"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "78"
+    etag: W/"4e-4Mgt4TqujecgTyDTPvUfISZklsw"
+    date: Mon, 28 Sep 2026 02:33:20 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "id": "6ab9d1f042233b8e710fc32d",
+        "email": "student1@example.com",
+        "role": "user"
+      }
+order: 1790562817601

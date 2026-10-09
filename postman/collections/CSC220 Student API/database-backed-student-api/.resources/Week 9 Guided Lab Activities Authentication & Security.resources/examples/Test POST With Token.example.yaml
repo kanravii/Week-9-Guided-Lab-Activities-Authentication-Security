@@ -1,0 +1,36 @@
+$kind: http-example
+request:
+  url: http://localhost:3000/api/students
+  method: POST
+  body:
+    type: json
+    content: |+
+      {
+        "name": "Nora",
+        "major": "IT",
+        "score": 88
+      }
+
+
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    x-powered-by: Express
+    content-type: application/json; charset=utf-8
+    content-length: "80"
+    etag: W/"50-Gll+1rN4f36KPfn56boRioCF3Xg"
+    date: Fri, 09 Oct 2026 04:14:19 GMT
+    connection: keep-alive
+    keep-alive: timeout=5
+  body:
+    type: json
+    content: |-
+      {
+        "name": "Nora",
+        "major": "IT",
+        "score": 88,
+        "_id": "6ac86a1b6937b547602b78d4",
+        "__v": 0
+      }
+order: 4413171493256531
